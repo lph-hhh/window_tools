@@ -1,17 +1,24 @@
 <template>
   <div id="app">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1>Window Tools</h1>
+    <p>您的桌面工具应用</p>
+    
+    <!-- 在这里添加您的插件组件 -->
+    <div class="plugin-container">
+      <!-- AI 接口弹窗 -->
+      <!-- 时间管理 -->
+      <!-- 英语学习 -->
+    </div>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import HelloWorld from './components/HelloWorld.vue';
 
 export default defineComponent({
   name: 'App',
   components: {
-    HelloWorld
+    // 在这里注册您的组件
   }
 });
 </script>
@@ -23,6 +30,17 @@ export default defineComponent({
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin: 20px;
+}
+
+.plugin-container {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+h1 {
+  color: #42b883;
 }
 </style>
